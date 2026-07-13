@@ -3,7 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lumina</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body
+    class="h-screen overflow-hidden bg-gray-100"
+    style="font-family: &quot;Hind Siliguri&quot;, sans-serif"
+  >
+    <!-- Main Container -->
+    <div class="flex h-full">
+      <!-- Left Sidebar (1/4) -->
+      <aside class="w-1/4 bg-white p-8 shadow-lg flex flex-col">
+        <!-- Logo + Title -->
+        <div class="flex items-center gap-5">
+          <img src="./images/logo.png" alt="Lumina Logo" class="w-8 h-8" />
+          <h1 class="text-3xl font-bold text-gray-800">Lumina</h1>
+        </div>
+
+        <!-- Subtitle -->
+        <p class="mt-4 text-gray-500 text-lg">Your Personal Library</p>
+
+        <!-- Add Book Button -->
+        <button
+          class="mt-10 flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-2xl transition duration-300"
+        >
+          <span class="text-2xl leading-none">+</span>
+          <span>Add New Book</span>
+        </button>
+
+        <!-- Navigation -->
+        <div class="mt-10 flex-1 flex flex-col">
+          <div class="space-y-5">
+            <!-- Row 1 -->
+            <div
+              class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
+            >
+              <img src="./images/book.png" alt="All Books" class="w-6 h-6" />
+              <span class="text-gray-700 font-medium">All Books</span>
+            </div>
+
+            <!-- Row 2 -->
+            <div
+              class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
+            >
+              <img
+                src="./images/ssave.png"
+                alt="Currently Reading"
+                class="w-6 h-6"
+              />
+              <span class="text-gray-700 font-medium">Currently Reading</span>
+            </div>
+
+            <!-- Row 3 -->
+            <div
+              class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
+            >
+              <img src="./images/tick.png" alt="Read Books" class="w-6 h-6" />
+              <span class="text-gray-700 font-medium">Finished</span>
+            </div>
+
+            <!-- Row 4 -->
+            <div
+              class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
+            >
+              <img src="./images/save.png" alt="Wishlist" class="w-6 h-6" />
+              <span class="text-gray-700 font-medium">Wishlist</span>
+            </div>
+          </div>
+
+          <!-- Dotted Divider -->
+
+          <!-- Bottom Section -->
+          <div class="mt-auto">
+            <hr class="-mx-8 mb-6 border-t-2 border-dotted border-gray-300" />
+
+            <!-- Row 1 -->
+            <div
+              class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
+            >
+              <img src="./images/mark.png" alt="Help" class="w-6 h-6" />
+              <span class="text-gray-700 font-medium">Help</span>
+            </div>
+
+            <!-- Row 2 -->
+            <div
+              class="mt-5 flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
+            >
+              <img src="./images/log.png" alt="Logout" class="w-6 h-6" />
+              <span class="text-gray-700 font-medium">Logout</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Content (3/4) -->
+      <main class="w-3/4 overflow-y-auto p-10">
+        <!-- Temporary content -->
+        <div class="space-y-6">
+          <div class="h-48 rounded-lg bg-white shadow"></div>
+          <div class="h-48 rounded-lg bg-white shadow"></div>
+          <div class="h-48 rounded-lg bg-white shadow"></div>
+          <div class="h-48 rounded-lg bg-white shadow"></div>
+          <div class="h-48 rounded-lg bg-white shadow"></div>
+          <div class="h-48 rounded-lg bg-white shadow"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
