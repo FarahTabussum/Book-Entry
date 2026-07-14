@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lumina</title>
 
-    <!-- Tailwind CSS -->
+    <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,25 +16,22 @@
     />
   </head>
   <body
-    class="h-screen overflow-hidden bg-gray-100"
+    class="h-screen overflow-hidden bg-yellow-50"
     style="font-family: &quot;Hind Siliguri&quot;, sans-serif"
   >
-    <!-- Main Container -->
-    <div class="flex h-full">
-      <!-- Left Sidebar (1/4) -->
+    <!--Main -->
+    <div class="flex h-full bg-yellow-50">
+      <!--Left-->
       <aside
-        class="w-1/4 bg-white p-8 shadow-lg flex flex-col border-dotted border-r-2 border-gray-300"
+        class="w-1/4 bg-yellow-50 p-8 shadow-lg flex flex-col border-dotted border-r-2 border-gray-300"
       >
-        <!-- Logo + Title -->
         <div class="flex items-center gap-5">
           <img src="./images/logo.png" alt="Lumina Logo" class="w-8 h-8" />
           <h1 class="text-3xl font-bold text-gray-800">Lumina</h1>
         </div>
 
-        <!-- Subtitle -->
         <p class="mt-4 text-gray-500 text-lg">Your Personal Library</p>
 
-        <!-- Add Book Button -->
         <button
           class="mt-10 flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-2xl transition duration-300"
         >
@@ -42,10 +39,9 @@
           <span>Add New Book</span>
         </button>
 
-        <!-- Navigation -->
+        <!-- Navigation-->
         <div class="mt-12 flex-1 flex flex-col">
           <div class="space-y-5">
-            <!-- Row 1 -->
             <div
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
@@ -53,7 +49,6 @@
               <span class="text-gray-700 font-medium">All Books</span>
             </div>
 
-            <!-- Row 2 -->
             <div
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
@@ -65,7 +60,6 @@
               <span class="text-gray-700 font-medium">Currently Reading</span>
             </div>
 
-            <!-- Row 3 -->
             <div
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
@@ -73,7 +67,6 @@
               <span class="text-gray-700 font-medium">Finished</span>
             </div>
 
-            <!-- Row 4 -->
             <div
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
@@ -82,13 +75,10 @@
             </div>
           </div>
 
-          <!-- Dotted Divider -->
-
-          <!-- Bottom Section -->
+          <!-- Bottom section -->
           <div class="mt-auto">
             <hr class="-mx-8 mb-5 border-t-2 border-dotted border-gray-300" />
 
-            <!-- Row 1 -->
             <div
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
@@ -96,7 +86,6 @@
               <span class="text-gray-700 font-medium">Help</span>
             </div>
 
-            <!-- Row 2 -->
             <div
               class="mt-5 flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
@@ -108,11 +97,12 @@
         </div>
       </aside>
 
-      <!-- Right Content (3/4) -->
+      <!-- Right-->
       <main class="w-3/4 overflow-y-auto">
-        <!-- Temporary content -->
-        <nav class="flex items-center justify-between mb-8 p-3 bg-white">
-          <!-- Search Bar -->
+        <!-- navbar -->
+        <nav
+          class="flex items-center justify-between mb-8 p-3 bg-yellow-50 border-dotted border-b-1 border-gray-300"
+        >
           <div
             class="flex items-center gap-3 w-96 px-4 py-3 bg-gray-100 rounded-xl shadow-sm border border-gray-200"
           >
@@ -124,48 +114,44 @@
             />
           </div>
 
-          <!-- Icon Buttons -->
           <div class="flex items-center gap-4">
             <button
-              class="w-11 h-11 bg-white rounded-xl shadow-sm flex items-center justify-center hover:bg-gray-100 transition"
+              class="w-11 h-11 bg-yellow-50 rounded-xl shadow-sm flex items-center justify-center hover:bg-gray-100 transition"
             >
               <img src="./images/bell.png" alt="Icon 1" class="w-5 h-5" />
             </button>
 
             <button
-              class="w-11 h-11 bg-white rounded-xl shadow-sm flex items-center justify-center hover:bg-gray-100 transition"
+              class="w-11 h-11 bg-yellow-50 rounded-xl shadow-sm flex items-center justify-center hover:bg-gray-100 transition"
             >
               <img src="./images/setting.png" alt="Icon 2" class="w-5 h-5" />
             </button>
 
             <button
-              class="w-11 h-11 bg-white rounded-xl shadow-sm flex items-center justify-center hover:bg-gray-100 transition"
+              class="w-11 h-11 bg-yellow-50 rounded-xl shadow-sm flex items-center justify-center hover:bg-gray-100 transition"
             >
               <img src="./images/User.png" alt="Icon 3" class="w-10 h-10" />
             </button>
           </div>
         </nav>
+
         <!-- Page Content -->
         <div class="p-6">
-          <!-- Heading -->
           <p class="text-5xl font-bold text-gray-900">Book Entry & Tasks</p>
 
-          <!-- Description -->
           <p class="mt-2 text-gray-500 text-lg">
             Organize your reading journey and track your progress.
           </p>
 
-          <!-- Main Section -->
+          <!-- Main-->
           <div class="mt-8 flex gap-6">
-            <!-- Left Section (3/4) -->
+            <!-- Left-->
             <div class="w-3/4 bg-white rounded-2xl shadow p-6">
-              <!-- Header -->
               <div class="flex items-center gap-3 mb-6">
                 <img src="./images/bb (1).png" alt="Add Book" class="w-6 h-6" />
                 <p class="text-lg font-semibold text-gray-800">Add New Book</p>
               </div>
 
-              <!-- Book Title -->
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">
                   Book Title
@@ -178,9 +164,7 @@
                 />
               </div>
 
-              <!-- Author + Genre Row -->
               <div class="grid grid-cols-2 gap-4 mt-5">
-                <!-- Author -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">
                     Author
@@ -193,14 +177,12 @@
                   />
                 </div>
 
-                <!-- Genre -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">
                     Genre
                   </label>
 
                   <div class="relative">
-                    <!-- Selected Value -->
                     <button
                       id="genre-btn"
                       type="button"
@@ -247,9 +229,8 @@
                   </div>
                 </div>
               </div>
-              <!-- Date + Total Pages -->
+
               <div class="grid grid-cols-2 gap-4 mt-5">
-                <!-- Finish Date -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">
                     Start Date
@@ -271,7 +252,6 @@
                   </div>
                 </div>
 
-                <!-- Total Pages -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">
                     Total Pages (Optional)
@@ -284,36 +264,214 @@
                 </div>
               </div>
 
-              <!-- Buttons -->
               <div class="flex justify-end gap-4 mt-8">
-                <!-- Clear -->
                 <button
                   type="button"
-                  class="px-6 py-3 border border-black rounded-xl bg-gray-200 hover:bg-gray-400 transition duration-300"
+                  class="px-6 py-3 border border-black rounded-3xl bg-gray-200 hover:bg-gray-400 transition duration-300"
                 >
                   Clear
                 </button>
 
-                <!-- Save -->
                 <button
                   type="submit"
-                  class="px-6 py-3 rounded-xl bg-orange-500 text-white hover:bg-orange-600 transition duration-300"
+                  class="px-6 py-3 rounded-3xl bg-orange-500 text-white hover:bg-orange-600 transition duration-300"
                 >
                   Save Book
                 </button>
               </div>
             </div>
 
-            <!-- Right Section (1/4) -->
-            <div class="w-1/4 bg-white rounded-2xl shadow p-6">
-              <!-- Your task panel goes here -->
+            <!-- Right Side -->
+            <div class="w-1/4 space-y-6">
+              <div class="bg-white rounded-2xl shadow p-6">
+                <div class="flex items-center justify-between mb-5">
+                  <p class="text-lg font-semibold text-gray-800">
+                    Current Read
+                  </p>
+
+                  <button
+                    class="px-3 py-1 text-xs font-medium rounded-full bg-red-100 text-red-600"
+                  >
+                    In Progress
+                  </button>
+                </div>
+
+                <!-- Book review-->
+                <div class="flex gap-4">
+                  <img
+                    src="./images/bookCover.png"
+                    alt="Book Cover"
+                    class="w-20 h-28 rounded-lg object-cover"
+                  />
+
+                  <div class="flex-1">
+                    <h3 class="font-semibold text-gray-900 text-xl">
+                      Braiding <br />Sweetgrass
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                      Robin Wall Kimmerer
+                    </p>
+
+                    <div class="mt-4">
+                      <div
+                        class="w-full h-2 bg-gray-200 rounded-full overflow-hidden"
+                      >
+                        <div
+                          class="h-full w-[45%] bg-orange-500 rounded-full"
+                        ></div>
+                      </div>
+
+                      <div
+                        class="flex justify-between mt-2 text-sm text-gray-500"
+                      >
+                        <span>175 pages</span>
+                        <span>45%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- last div -->
+              <div class="bg-white rounded-2xl shadow p-6">
+                <div class="flex items-center gap-3 mb-5">
+                  <img src="./images/2tick.png" alt="Tasks" class="w-5 h-5" />
+                  <h3 class="text-xl text-gray-800">Reading Tasks</h3>
+                </div>
+
+                <!-- Add Task -->
+                <div class="relative mb-5">
+                  <input
+                    id="task-input"
+                    type="text"
+                    placeholder="Add a new task..."
+                    class="w-full px-4 py-3 pr-12 bg-gray-100 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-orange-400"
+                  />
+
+                  <button
+                    type="button"
+                    id="add-task-btn"
+                    class="absolute right-3 top-1/2 -translate-y-1/2"
+                  >
+                    <img
+                      src="./images/plus.png"
+                      alt="Add Task"
+                      class="w-5 h-5"
+                    />
+                  </button>
+                </div>
+
+                <!-- Task List -->
+                <ul id="task-list" class="space-y-3">
+                  <li class="task-item flex items-center gap-3 cursor-pointer">
+                    <input type="checkbox" class="task-checkbox w-5 h-5" />
+
+                    <span>Read Chapter 4: Maple Sugar Moon</span>
+                  </li>
+
+                  <li class="task-item flex items-center gap-3 cursor-pointer">
+                    <input type="checkbox" class="task-checkbox w-5 h-5" />
+
+                    <span>Write summary notes for Part 1</span>
+                  </li>
+
+                  <li class="task-item flex items-center gap-3 cursor-pointer">
+                    <input type="checkbox" class="task-checkbox w-5 h-5" />
+
+                    <span>Buy highlighter pens</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Rest of your page -->
-        <div id="book-list" class="space-y-6">
-          <!-- Book cards will go here -->
+        <!-- book list -->
+        <div id="book-list" class="p-8">
+          <div class="flex items-center justify-between mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Recently Added</h2>
+
+            <button
+              class="flex items-center gap-2 text-orange-500 font-medium hover:text-orange-600 transition"
+            >
+              <span>View All</span>
+
+              <img src="./images/arr.png" alt="View All" class="w-4 h-4" />
+            </button>
+          </div>
+
+          <!-- Cards -->
+          <div class="grid grid-cols-5 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <img
+                src="./images/book1.png"
+                alt="Book"
+                class="w-full h-60 object-cover rounded-xl"
+              />
+
+              <h3 class="mt-4 font-semibold text-gray-800">
+                The Hidden Life of Trees
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">Peter Wohlleben</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <img
+                src="./images/book2.png"
+                alt="Book"
+                class="w-full h-60 object-cover rounded-xl"
+              />
+
+              <h3 class="mt-4 font-semibold text-gray-800">
+                Thinking, Fast and Slow
+              </h3>
+
+              <p class="text-sm text-gray-500 mt-1">Daniel Kahneman</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <img
+                src="./images/book3.png"
+                alt="Book"
+                class="w-full h-60 object-cover rounded-xl"
+              />
+
+              <h3 class="mt-4 font-semibold text-gray-800">Atomic Habits</h3>
+
+              <p class="text-sm text-gray-500 mt-1">James Clear</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <img
+                src="./images/book4.png"
+                alt="Book"
+                class="w-full h-60 object-cover rounded-xl"
+              />
+
+              <h3 class="mt-4 font-semibold text-gray-800">Dune</h3>
+
+              <p class="text-sm text-gray-500 mt-1">Frank Herbert</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="border-2 border-dashed border-gray-300 rounded-2xl flex flex-col items-center justify-center hover:border-orange-500 hover:bg-orange-50 transition cursor-pointer"
+            >
+              <img
+                src="./images/pplus.png"
+                alt="Quick Add"
+                class="w-10 h-10 mb-4 rounded-full"
+              />
+
+              <p class="font-medium text-gray-600">Quick Add</p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
