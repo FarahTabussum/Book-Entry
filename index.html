@@ -28,11 +28,11 @@
         class="fixed lg:static top-0 left-0 z-50 h-full w-72 lg:w-1/4 bg-yellow-50 p-8 shadow-lg flex flex-col border-r-2 border-dotted border-gray-300 transform -translate-x-full lg:translate-x-0 transition-transform duration-300"
       >
         <button id="close-btn" class="lg:hidden self-end mb-4 text-3xl">
-          <img src="./images/cross.jpg" alt="Close" class="w-6 h-6" />
+          <img src="./images/cross.svg" alt="Close" class="w-6 h-6" />
         </button>
 
         <div class="flex items-center gap-5">
-          <img src="./images/logo.png" alt="Lumina Logo" class="w-8 h-8" />
+          <img src="./images/logo.svg" alt="Lumina Logo" class="w-8 h-8" />
           <h1 class="text-3xl font-bold text-gray-800">Lumina</h1>
         </div>
 
@@ -41,7 +41,9 @@
         <button
           class="mt-10 flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-2xl transition duration-300"
         >
-          <span class="text-2xl leading-none">+</span>
+          <span class="text-2xl leading-none">
+            <img src="./images/whitePlus.svg" alt="Add Book" class="w-6 h-6" />
+          </span>
           <span>Add New Book</span>
         </button>
 
@@ -51,7 +53,7 @@
             <div
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
-              <img src="./images/book.png" alt="All Books" class="w-6 h-6" />
+              <img src="./images/book.svg" alt="All Books" class="w-6 h-6" />
               <span class="text-gray-700 font-medium">All Books</span>
             </div>
 
@@ -59,7 +61,7 @@
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
               <img
-                src="./images/ssave.png"
+                src="./images/ssave.svg"
                 alt="Currently Reading"
                 class="w-6 h-6"
               />
@@ -69,14 +71,14 @@
             <div
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
-              <img src="./images/tick.png" alt="Read Books" class="w-6 h-6" />
+              <img src="./images/tick.svg" alt="Read Books" class="w-6 h-6" />
               <span class="text-gray-700 font-medium">Finished</span>
             </div>
 
             <div
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
-              <img src="./images/save.png" alt="Wishlist" class="w-6 h-6" />
+              <img src="./images/save.svg" alt="Wishlist" class="w-6 h-6" />
               <span class="text-gray-700 font-medium">Wishlist</span>
             </div>
           </div>
@@ -88,14 +90,14 @@
             <div
               class="flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
-              <img src="./images/mark.png" alt="Help" class="w-6 h-6" />
+              <img src="./images/questionMark.svg" alt="Help" class="w-6 h-6" />
               <span class="text-gray-700 font-medium">Help</span>
             </div>
 
             <div
               class="mt-5 flex items-center gap-5 cursor-pointer hover:text-orange-500 transition"
             >
-              <img src="./images/log.png" alt="Logout" class="w-6 h-6" />
+              <img src="./images/logout.svg" alt="Logout" class="w-6 h-6" />
               <span class="text-gray-700 font-medium">Logout</span>
             </div>
           </div>
@@ -117,7 +119,7 @@
           <div class="flex items-center gap-3 flex-1">
             <!-- Hamburger -->
             <button id="menu-btn" class="lg:hidden">
-              <img src="./images/hamburger.png" alt="Menu" class="w-7 h-7" />
+              <img src="./images/burger-menu.svg" alt="Menu" class="w-7 h-7" />
             </button>
 
             <!-- Search Bar -->
@@ -127,14 +129,14 @@
               id="search-btn"
               class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100"
             >
-              <img src="./images/search.png" alt="Search" class="w-5 h-5" />
+              <img src="./images/search.svg" alt="Search" class="w-5 h-5" />
             </button>
 
             <!-- Desktop Search -->
             <div
               class="hidden lg:flex items-center gap-3 w-96 px-4 py-3 bg-gray-100 rounded-xl border border-gray-200"
             >
-              <img src="./images/search.png" alt="Search" class="w-5 h-5" />
+              <img src="./images/search.svg" alt="Search" class="w-5 h-5" />
 
               <input
                 type="text"
@@ -149,7 +151,7 @@
               class="w-11 h-11 bg-yellow-50 rounded-xl shadow-sm flex items-center justify-center hover:bg-gray-100 transition"
             >
               <img
-                src="./images/bell.png"
+                src="./images/bell.svg"
                 alt="Notifications"
                 class="w-5 h-5"
               />
@@ -158,14 +160,14 @@
             <button
               class="w-11 h-11 bg-yellow-50 rounded-xl shadow-sm flex items-center justify-center hover:bg-gray-100 transition"
             >
-              <img src="./images/setting.png" alt="Settings" class="w-5 h-5" />
+              <img src="./images/setting.svg" alt="Settings" class="w-5 h-5" />
             </button>
 
             <button
               class="w-11 h-11 bg-yellow-50 rounded-xl shadow-sm flex items-center justify-center hover:bg-gray-100 transition"
             >
               <img
-                src="./images/User.png"
+                src="./images/User.svg"
                 alt="Profile"
                 class="w-10 h-10 rounded-full"
               />
@@ -178,7 +180,7 @@
               class="w-11 h-11 bg-yellow-50 rounded-xl shadow-sm flex items-center justify-center"
             >
               <img
-                src="./images/User.png"
+                src="./images/User.svg"
                 alt="Profile"
                 class="w-10 h-10 rounded-full"
               />
@@ -192,21 +194,21 @@
               <button
                 class="w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-100"
               >
-                <img src="./images/bell.png" class="w-5 h-5" />
+                <img src="./images/bell.svg" class="w-5 h-5" />
                 <span>Alerts</span>
               </button>
 
               <button
                 class="w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-100"
               >
-                <img src="./images/setting.png" class="w-5 h-5" />
+                <img src="./images/setting.svg" class="w-5 h-5" />
                 <span>Settings</span>
               </button>
             </div>
           </div>
         </nav>
 
-        <!-- Page Content -->
+        <!-- Main Content-->
         <div class="p-6">
           <p class="text-5xl font-bold text-gray-900">Book Entry & Tasks</p>
 
@@ -220,7 +222,7 @@
             <div class="w-full lg:w-3/4 bg-white rounded-2xl shadow p-6">
               <!-- Header -->
               <div class="flex items-center gap-3 mb-6">
-                <img src="./images/bb (1).png" alt="Add Book" class="w-6 h-6" />
+                <img src="./images/2plus.svg" alt="Add Book" class="w-6 h-6" />
                 <p class="text-lg font-semibold text-gray-800">Add New Book</p>
               </div>
 
@@ -265,7 +267,7 @@
                       <span id="selected-genre">Select Genre</span>
 
                       <img
-                        src="./images/arrow.png"
+                        src="./images/arrow.svg"
                         alt="Arrow"
                         class="w-4 h-4"
                       />
@@ -314,7 +316,7 @@
                     class="flex items-center gap-3 px-4 py-3 border border-gray-300 rounded-xl bg-gray-100 focus-within:ring-2 focus-within:ring-orange-400"
                   >
                     <img
-                      src="./images/calendar.png"
+                      src="./images/calendar.svg"
                       alt="Calendar"
                       class="w-5 h-5"
                     />
@@ -375,7 +377,7 @@
                 <!-- Book review-->
                 <div class="flex gap-4">
                   <img
-                    src="./images/bookCover.png"
+                    src="./images/bookCover.svg"
                     alt="Book Cover"
                     class="w-20 h-28 rounded-lg object-cover"
                   />
@@ -412,7 +414,7 @@
               <!-- last div -->
               <div class="bg-white rounded-2xl shadow p-6">
                 <div class="flex items-center gap-3 mb-5">
-                  <img src="./images/2tick.png" alt="Tasks" class="w-5 h-5" />
+                  <img src="./images/2tick.svg" alt="Tasks" class="w-5 h-5" />
                   <h3 class="text-xl text-gray-800">Reading Tasks</h3>
                 </div>
 
@@ -431,7 +433,7 @@
                     class="absolute right-3 top-1/2 -translate-y-1/2"
                   >
                     <img
-                      src="./images/plus.png"
+                      src="./images/plus.svg"
                       alt="Add Task"
                       class="w-5 h-5"
                     />
@@ -468,7 +470,7 @@
         >
           <div class="bg-white rounded-2xl shadow-lg w-11/12 max-w-md p-5">
             <div class="flex items-center gap-3">
-              <img src="./images/search.png" class="w-5 h-5" alt="Search" />
+              <img src="./images/search.svg" class="w-5 h-5" alt="Search" />
 
               <input
                 id="mobile-search"
@@ -478,7 +480,7 @@
               />
 
               <button id="close-search" class="text-2xl">
-                <img src="./images/cross.jpg" alt="Close" class="w-6 h-6" />
+                <img src="./images/cross.svg" alt="Close" class="w-6 h-6" />
               </button>
             </div>
           </div>
@@ -494,21 +496,25 @@
             >
               <span>View All</span>
 
-              <img src="./images/arr.png" alt="View All" class="w-4 h-4" />
+              <img src="./images/arr.svg" alt="View All" class="w-4 h-4" />
             </button>
           </div>
 
           <!-- Cards -->
-          <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+          <div
+            class="flex lg:grid lg:grid-cols-5 gap-6 overflow-x-auto lg:overflow-visible snap-x snap-mandatory pb-2 scrollbar-hide"
+          >
             <!-- Card 1 -->
-            <div class="bg-white rounded-2xl shadow p-4">
+            <div
+              class="min-w-[250px] lg:min-w-0 bg-white rounded-2xl shadow p-4 snap-center flex-shrink-0"
+            >
               <img
-                src="./images/book1.png"
+                src="./images/book1.svg"
                 alt="Book"
                 class="w-full h-60 object-cover rounded-xl"
               />
 
-              <h3 class="mt-4 font-semibold text-gray-800">
+              <h3 class="mt-6 font-semibold text-gray-800">
                 The Hidden Life of Trees
               </h3>
 
@@ -516,14 +522,16 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white rounded-2xl shadow p-4">
+            <div
+              class="min-w-[250px] lg:min-w-0 bg-white rounded-2xl shadow p-4 snap-center flex-shrink-0"
+            >
               <img
-                src="./images/book2.png"
+                src="./images/book2.svg"
                 alt="Book"
                 class="w-full h-60 object-cover rounded-xl"
               />
 
-              <h3 class="mt-4 font-semibold text-gray-800">
+              <h3 class="mt-6 font-semibold text-gray-800">
                 Thinking, Fast and Slow
               </h3>
 
@@ -531,42 +539,46 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white rounded-2xl shadow p-4">
+            <div
+              class="min-w-[250px] lg:min-w-0 bg-white rounded-2xl shadow p-4 snap-center flex-shrink-0"
+            >
               <img
-                src="./images/book3.png"
+                src="./images/book3.svg"
                 alt="Book"
                 class="w-full h-60 object-cover rounded-xl"
               />
 
-              <h3 class="mt-4 font-semibold text-gray-800">Atomic Habits</h3>
+              <h3 class="mt-6 font-semibold text-gray-800">Atomic Habits</h3>
 
               <p class="text-sm text-gray-500 mt-1">James Clear</p>
             </div>
 
             <!-- Card 4 -->
-            <div class="bg-white rounded-2xl shadow p-4">
+            <div
+              class="min-w-[250px] lg:min-w-0 bg-white rounded-2xl shadow p-4 snap-center flex-shrink-0"
+            >
               <img
-                src="./images/book4.png"
+                src="./images/book4.svg"
                 alt="Book"
                 class="w-full h-60 object-cover rounded-xl"
               />
 
-              <h3 class="mt-4 font-semibold text-gray-800">Dune</h3>
+              <h3 class="mt-6 font-semibold text-gray-800">Dune</h3>
 
               <p class="text-sm text-gray-500 mt-1">Frank Herbert</p>
             </div>
 
             <!-- Card 5 -->
             <div
-              class="border-2 border-dashed border-gray-300 rounded-2xl flex flex-col items-center justify-center hover:border-orange-500 hover:bg-orange-50 transition cursor-pointer"
+              class="min-w-[250px] lg:min-w-0 h-[392px] flex-shrink-0 snap-center border-2 border-dotted border-gray-300 rounded-2xl shadow p-4 flex flex-col items-center justify-center hover:border-orange-500 hover:bg-orange-50 transition cursor-pointer"
             >
-              <img
-                src="./images/pplus.png"
-                alt="Quick Add"
-                class="w-10 h-10 mb-4 rounded-full"
-              />
+              <div
+                class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-4"
+              >
+                <img src="./images/pplus.svg" alt="Quick Add" class="w-7 h-7" />
+              </div>
 
-              <p class="font-medium text-gray-600">Quick Add</p>
+              <p class="font-medium text-gray-600 text-center">Quick Add</p>
             </div>
           </div>
         </div>
